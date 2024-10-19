@@ -9,7 +9,7 @@ This project is a simple Todo List web application where users can create, updat
 - Date-based sorting of tasks
 
 ## Tech Stack
-- **Front-end**: React
+- **Front-end**: HTML, CSS, Javascript, React
 - **Back-end**: Express, Node.js
 - **Database**: PostgreSQL
 - **Authentication**: JSON Web Tokens (JWT), react-cookie and bcrypt for password hashing
