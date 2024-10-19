@@ -15,4 +15,4 @@ This project is a simple Todo List web application where users can create, updat
 - **Authentication**: JSON Web Tokens (JWT), react-cookie and bcrypt for password hashing
 
 ## Installation
-  check the installation-guide.txt
+- **check the installation-guide.txt**
