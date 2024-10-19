@@ -1,4 +1,4 @@
-# Todo List App
+# Authenticated Todo List App
 
 This project is a simple Todo List web application where users can create, update, and delete tasks. Each task includes progress tracking, and users must register and log in to access their tasks. The app is built using a **React** front-end, an **Express** back-end, and **PostgreSQL** for the database.
 
