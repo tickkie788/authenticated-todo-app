@@ -1,0 +1,52 @@
+Installation
+
+*** Setup back-end ***
+
+1.Set up the back-end
+  - cd server
+  - npm i
+
+2.Set up your PostgreSQL database
+  CREATE DATABASE todoapp;
+
+  CREATE TABLE todos (
+    id VARCHAR(255) PRIMARY KEY,
+    user_email VARCHAR(255) REFERENCES users(email),
+    title VARCHAR(30) NOT NULL,
+    progress INT NOT NULL,
+    date VARCHAR(300)
+  );
+
+  CREATE TABLE users (
+    email VARCHAR(255) PRIMARY KEY,
+    hashed_password VARCHAR(255)
+  );
+
+3.Create a .env file in the server directory with the following content
+  PORT=5000
+  PG_USER=postgres
+  PG_HOST=localhost
+  PG_DATABASE=todoapp
+  PG_PASSWORD=your_pg_password
+  PG_PORT=5432
+
+4.Start the back-end server
+  - node server.js
+
+
+*** Setup front-end ***
+
+1.Set up the back-end
+  - cd client
+  - npm i
+
+2.Create a .env file in the client directory with the following content
+  REACT_APP_SERVER_URL=http://localhost:5000
+
+3.Start the front-end development server
+  - npm start
+
+Access the app
+The app will be running locally:
+  - Front-end: http://localhost:3000
+  - Back-end: http://localhost:5000
